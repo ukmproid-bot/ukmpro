@@ -14,16 +14,16 @@ export function ExpertsSection() {
     {
       name: "Bpk Dony",
       role: "Owner UKM Mendunia & UKM Express",
-      speciality: "Pakar ekspor produk ke mancanegara, membuka jalan produk Indonesia go international",
+      speciality: "Pakar ekspor produk ke mancanegara, membuka jalan produk UMKM Indonesia go international",
       avatar: DonyAvatar,
       highlight: "Export Specialist"
     },
     {
       name: "Kang Balya",
       role: "Owner Santridigital.net",
-      speciality: "Praktisi Facebook Marketplace dan AI Specialist, ahli optimasi penjualan digital",
+      speciality: "Praktisi Facebook Marketplace dan AI Enthusiast, ahli optimasi FBMP organic",
       avatar: BalyaAvatar,
-      highlight: "AI & Marketplace Pro"
+      highlight: "AI Enthusiast"
     }
   ];
 
