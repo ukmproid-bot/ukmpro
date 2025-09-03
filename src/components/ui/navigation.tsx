@@ -31,12 +31,12 @@ export function Navigation() {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-3 group">
+          <a href="#" className="flex items-center space-x-3 group flex-shrink-0">
             <img src={logo} alt="UKMPRO.ID Logo" className="w-10 h-10 transition-transform group-hover:rotate-12" />
-            <span className="text-2xl font-bold text-foreground">UKMPRO.ID</span>
+            <span className="hidden sm:inline text-2xl font-bold text-foreground">UKMPRO.ID</span>
           </a>
 
           {/* Desktop Navigation & CTAs */}
@@ -64,7 +64,7 @@ export function Navigation() {
           </div>
 
           {/* Mobile CTAs & Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-2 flex-shrink-0">
             <Button asChild variant="outline" size="sm">
               <a href="https://ukmpro.id/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
             </Button>
