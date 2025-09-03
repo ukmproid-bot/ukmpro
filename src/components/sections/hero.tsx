@@ -71,19 +71,8 @@ export function HeroSection() {
               size="lg"
               className="btn-primary text-primary-foreground px-8 py-4 text-lg"
             >
-              <a href="https://ukmpro.id/login-signup">
+              <a href="#pricing">
                 🚀 Mulai Revolusi Bisnis Saya!
-              </a>
-            </Button>
-            
-            <Button 
-              asChild
-              variant="outline"
-              size="lg"
-              className="btn-secondary px-8 py-4 text-lg"
-            >
-              <a href="#demo">
-                📺 Lihat Demo Dulu
               </a>
             </Button>
           </div>
