@@ -39,35 +39,46 @@ export function Navigation() {
             <span className="text-2xl font-bold text-foreground">UKMPRO.ID</span>
           </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            ))}
-          </nav>
+          {/* Desktop Navigation & CTAs */}
+          <div className="hidden md:flex items-center gap-6">
+            <nav className="flex items-center space-x-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              ))}
+            </nav>
+            <div className="flex items-center gap-2">
+              <Button asChild variant="outline">
+                <a href="https://ukmpro.id/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
+              </Button>
+              <Button asChild className="btn-primary text-primary-foreground">
+                <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
+              </Button>
+            </div>
+          </div>
 
-          {/* CTA Button */}
-          <Button 
-            asChild
-            className="hidden md:flex btn-primary text-primary-foreground"
-          >
-            <a href="https://ukmpro.id/login-signup">Mulai Sekarang</a>
-          </Button>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-foreground focus:outline-none"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile CTAs & Menu Button */}
+          <div className="flex md:hidden items-center gap-2">
+            <Button asChild variant="outline" size="sm">
+              <a href="https://ukmpro.id/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
+            </Button>
+            <Button asChild size="sm" className="btn-primary text-primary-foreground">
+              <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
+            </Button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-foreground focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -87,14 +98,6 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button 
-              asChild
-              className="w-full btn-primary text-primary-foreground mt-4"
-            >
-              <a href="https://ukmpro.id/login-signup" onClick={() => setIsOpen(false)}>
-                Mulai Sekarang
-              </a>
-            </Button>
           </div>
         </div>
       </div>
