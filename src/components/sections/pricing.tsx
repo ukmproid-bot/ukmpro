@@ -49,7 +49,7 @@ export function PricingSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <span className="text-warning font-semibold text-lg">INVESTASI TERBAIK</span>
-          <h2 className="text-4xl md:text-6xl font-black text-foreground mt-4 mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground mt-4 mb-6">
             Investasi Sekali,{" "}
             <span className="text-gradient">Cuan Selamanya!</span>
           </h2>
@@ -58,16 +58,16 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="glass-card p-8 md:p-12 rounded-3xl border-2 border-primary relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="glass-card p-6 sm:p-8 lg:p-12 rounded-3xl border-2 border-primary relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             {/* Glow Effects */}
             <div className="absolute -top-20 -left-20 w-40 h-40 bg-gradient-primary opacity-20 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-gradient-secondary opacity-20 rounded-full blur-3xl"></div>
             
             <div className="relative z-10">
-              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 {/* Left Side - Price & Urgency */}
-                <div className="text-center md:text-left">
+                <div className="text-center lg:text-left">
                   {/* Scarcity Badge */}
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-danger/20 border border-danger/30 text-danger font-bold mb-6">
                     🔥 PROMO TERBATAS - HANYA 100 SLOT!
@@ -79,8 +79,8 @@ export function PricingSection() {
                   
                   {/* Price */}
                   <div className="mb-6">
-                    <div className="flex items-baseline justify-center md:justify-start gap-3 mb-2">
-                      <span className="text-5xl sm:text-6xl md:text-7xl font-black text-gradient">
+                    <div className="flex items-baseline justify-center lg:justify-start gap-3 mb-2">
+                      <span className="text-6xl md:text-7xl font-black text-gradient">
                         49K
                       </span>
                       <span className="text-xl text-muted-foreground line-through">
@@ -93,9 +93,9 @@ export function PricingSection() {
                   </div>
 
                   {/* Countdown Timer */}
-                  <div className="glass-card p-6 rounded-2xl bg-danger/10 border border-danger/20 mb-8">
+                  <div className="glass-card p-6 rounded-2xl bg-danger/10 border border-danger/20 mb-8 max-w-sm mx-auto lg:mx-0">
                     <p className="text-sm font-semibold text-danger mb-3">⏰ Promo Berakhir Dalam:</p>
-                    <div className="flex justify-center md:justify-start gap-4">
+                    <div className="flex justify-center gap-4">
                       <div className="text-center">
                         <div className="text-2xl font-bold text-foreground">
                           {String(timeLeft.hours).padStart(2, '0')}
@@ -123,7 +123,7 @@ export function PricingSection() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full md:w-auto btn-primary text-primary-foreground px-12 py-4 text-lg mb-4"
+                    className="w-full lg:w-auto btn-primary text-primary-foreground px-12 py-4 text-lg mb-4"
                   >
                     <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">
                       🚀 AMBIL PROMO 49K SEKARANG!
@@ -137,7 +137,7 @@ export function PricingSection() {
 
                 {/* Right Side - Features */}
                 <div>
-                  <h4 className="text-xl font-bold text-foreground mb-6 text-center md:text-left">
+                  <h4 className="text-xl font-bold text-foreground mb-6 text-center lg:text-left">
                     Yang Anda Dapatkan:
                   </h4>
                   <div className="space-y-4">
