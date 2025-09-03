@@ -34,9 +34,9 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-3 group flex-shrink-0">
+          <a href="#" className="flex items-center space-x-2 sm:space-x-3 group flex-shrink-0">
             <img src={logo} alt="UKMPRO.ID Logo" className="w-10 h-10 transition-transform group-hover:rotate-12" />
-            <span className="hidden sm:inline text-2xl font-bold text-foreground">UKMPRO.ID</span>
+            <span className="text-xl sm:text-2xl font-bold text-foreground">UKMPRO.ID</span>
           </a>
 
           {/* Desktop Navigation & CTAs */}
