@@ -125,7 +125,7 @@ export function PricingSection() {
                     size="lg"
                     className="w-full md:w-auto btn-primary text-primary-foreground px-12 py-4 text-lg mb-4"
                   >
-                    <a href="https://ukmpro.id/login-signup">
+                    <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">
                       🚀 AMBIL PROMO 49K SEKARANG!
                     </a>
                   </Button>
