@@ -55,10 +55,10 @@ export function Navigation() {
             </nav>
             <div className="flex items-center gap-2">
               <Button asChild variant="outline">
-                <a href="https://ukmpro.id/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
+                <a href="https://ukmpro.online/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
               </Button>
               <Button asChild className="btn-primary text-primary-foreground">
-                <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
+                <a href="https://ukmpro.online/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
               </Button>
             </div>
           </div>
@@ -69,7 +69,7 @@ export function Navigation() {
               <a href="https://ukmpro.id/login-signup/#login" target="_blank" rel="noopener noreferrer">Masuk</a>
             </Button>
             <Button asChild size="sm" className="btn-primary text-primary-foreground">
-              <a href="https://ukmpro.id/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
+              <a href="https://ukmpro.online/login-signup/#signup" target="_blank" rel="noopener noreferrer">Daftar</a>
             </Button>
             <button
               onClick={() => setIsOpen(!isOpen)}
